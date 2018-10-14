@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
-import { observable, reaction, action } from "mobx";
+import { observable, reaction } from "mobx";
 import { randomBtw } from "./../../utils/randomBtw";
 import "./SlotComponent.css";
 

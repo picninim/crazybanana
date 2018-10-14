@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { observer, inject, Observer } from "mobx-react";
+import { observer } from "mobx-react";
 import { observable } from "mobx";
 import SlotComponent from "../Slot/SlotComponent";
 import { randomBtw } from "./../../utils/randomBtw";
