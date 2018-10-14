@@ -1,0 +1,42 @@
+.SlotComponent {
+  background-color: #fef7e4;
+  flex: 1;
+  height: 150px;
+  margin: 0 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.SlotComponent .SlotView {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.SlotComponent .SlotView.spin {
+  animation-name: spin;
+  animation-iteration-count: infinite;
+}
+.SlotComponent .SlotView > div {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  background-size: 57%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.SlotComponent .SlotView > div:first-child {
+  top: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

@@ -1,0 +1,130 @@
+.SlotMachine {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+
+.SlotMachine:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: #0000001f;
+  border-radius: 100%;
+}
+
+.SlotMain {
+  flex: 1;
+  background-color: #ffc236;
+  border-radius: 55px;
+  height: 220px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  border: 7px solid #ffdf87;
+  box-shadow: inset 0px -85px 1px 1px rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+.SlotMain .SlotComponent:first-child {
+  border-radius: 30px 0px 0px 30px;
+}
+.SlotMain .SlotComponent:last-child {
+  border-radius: 0 30px 30px 0;
+}
+
+.Side {
+  width: 85px;
+  border-radius: 50%;
+  height: 90px;
+  background-color: #e27373;
+  margin: -40px;
+  background-color: #9c5e0e;
+  box-shadow: inset 0px -25px 0px 9px rgba(121, 50, 37, 0.33);
+  position: relative;
+  z-index: 0;
+}
+.Handle {
+  height: 140px;
+  width: 10px;
+  position: absolute;
+  right: 18px;
+  background-color: #ffc31b;
+  border-radius: 10px;
+  bottom: 65px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.Handle.down {
+  height: 0;
+}
+
+.Handle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-color: #ff4356;
+  box-shadow: inset 5px -6px 0px 9px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  right: -12px;
+}
+
+.Button {
+  width: 100%;
+  text-align: center;
+}
+.Button .StopBtn {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  line-height: 50px;
+  background-color: #e13948;
+  border-radius: 50%;
+  opacity: 0;
+  font-size: 20px;
+  color: #fff;
+  border: 6px solid #ad202d;
+  box-shadow: 0px 0px 0px 0px #691111;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+  transform: rotateX(35deg);
+  transform-origin: bottom;
+  cursor: pointer;
+}
+
+.Button .StopBtn.visible {
+  box-shadow: 0px 7px 0px 0px #691111;
+  transform: translateY(-7px) rotateX(35deg);
+  opacity: 1;
+}
+
+.Panel {
+  width: 100%;
+  text-align: center;
+}
+
+.Panel .View {
+  width: 50%;
+  margin: auto;
+  height: 50px;
+  background-color: #fef7e3;
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border: 7px solid #ffdf87;
+  box-shadow: inset 0px -24px 0px 0px rgba(255, 195, 27, 0.18);
+  z-index: 1;
+  position: relative;
+  bottom: -7px;
+}
