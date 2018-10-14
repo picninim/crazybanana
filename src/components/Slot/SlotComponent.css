@@ -8,6 +8,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  box-shadow: inset 0px -70px 0px #ffc31b24;
+  border: 2px solid #ffc31b;
 }
 .SlotComponent .SlotView {
   width: 100%;
